@@ -5,12 +5,12 @@ import java.util.List;
 import tic_tac_toe.strategies.WinningStrategy;
 
 public class Game {
-    Board board;
+    public Board board;
     List<Player> players;
     List<WinningStrategy> winningStrategies;
     List<Move> moves;
     Player currentPlayer;
-    GameState gameState;
+    public GameState gameState;
 
     public static Builder getBuilder(){
         return new Builder(); 
@@ -40,7 +40,7 @@ public class Game {
         List<Move> moves;
         Player currentPlayer;
         GameState gameState;
-        Game build(){
+        public Game build(){
             return new Game(this);
         }
         public Board getBoard() {

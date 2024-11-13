@@ -1,5 +1,5 @@
 package tic_tac_toe.models;
 
-public class BotPlayer {
+public class BotPlayer extends Player{
     BotDifficultyLevel botDifficultyLevel;
 }
